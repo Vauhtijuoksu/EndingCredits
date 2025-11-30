@@ -24,19 +24,22 @@ function scrollup(){
     if (scrollpos < -document.getElementById('scroll').offsetHeight){
 
         clearInterval(do_scroll)
-        //do_fadein = setInterval(fadein, 10)
-        do_fadeout = setInterval(fadeout, 10)
+        do_fadein = setInterval(fadein, 10)
     }
 }
 
 function fadein(){
-   document.getElementById("end").style.opacity = opacity;
    opacity += 0.003;
    if (opacity > 1){
        document.getElementById("end").style.opacity = 1;
-        clearInterval(do_fadein)
-
+   } else {
+       document.getElementById("end").style.opacity = opacity;
    }
+    if (opacity > 4){
+        clearInterval(do_fadein)
+        do_fadeout = setInterval(fadeout, 10)
+        
+    }
 }
 
 function fadeout(){
