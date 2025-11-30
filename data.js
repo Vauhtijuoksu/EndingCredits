@@ -25,7 +25,7 @@ const credits = [
     {'type': 'name', 'text': 'enk'},
     {'type': 'name', 'text': 'jsloth'},
     {'type': 'name', 'text': 'Runtu'},
-    {'type': 'name', 'text': 'Spike_B'}
+    {'type': 'name', 'text': 'Spike_B'},
     {'type': 'name', 'text': 'T3mu'},
     {'type': 'title', 'text': 'Mainosmyynti'},
     {'type': 'responsible', 'text': 'Anni'},
