@@ -1,5 +1,5 @@
 const scrolltime = 6.5
-const endtext = 'Kiitos katsomisesta!' Keväällä uudestaan!
+const endtext = 'Kiitos katsomisesta! Keväällä uudestaan!'
 const credits = [
     {'type': 'bigheading', 'text': 'Vauhtijuoksu+ 2025 tekemässä:'},
     {'type': 'heading', 'text': 'Vauhtijuoksu+-toimikunta 2025'},
