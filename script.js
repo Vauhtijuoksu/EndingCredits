@@ -11,7 +11,9 @@ document.getElementById('end').innerHTML = endtext
 
 
 let opacity = 0;
+let antiopacity = 1;
 let do_fadein
+let do_fadeout
 
 
 
@@ -22,7 +24,8 @@ function scrollup(){
     if (scrollpos < -document.getElementById('scroll').offsetHeight){
 
         clearInterval(do_scroll)
-        do_fadein = setInterval(fadein, 10)
+        //do_fadein = setInterval(fadein, 10)
+        do_fadeout = setInterval(fadeout, 10)
     }
 }
 
@@ -35,3 +38,14 @@ function fadein(){
 
    }
 }
+
+function fadeout(){
+   document.body.style.opacity = antiopacity;
+   antiopacity -= 0.003;
+   if (antiopacity <= 0){
+       document.body.style.opacity = 0;
+        clearInterval(do_fadeout)
+
+   }
+}
+
